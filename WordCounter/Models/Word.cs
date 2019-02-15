@@ -2,21 +2,30 @@ namespace WordCounter.Models
 {
   public class Word
   { // properties, methods, etc. will go here.
-    public string WordInput;
-    public string SentenceInput;
-    public int WordCount;
+    // public string WordInput;
+    // public string SentenceInput;
+    // public int WordCount;
 
-    public Word(string wordInput, string sentenceInput) // Constructor
+    // public Word(string wordInput, string sentenceInput) // Constructor
+    // {
+    //     WordInput = wordInput;
+    //     SentenceInput = sentenceInput;
+    // }
+
+    public bool IsAlpha(string WordInput)
     {
-        WordInput = wordInput;
-        SentenceInput = sentenceInput;
+        char[] wordInputArray = WordInput.ToCharArray();
+
+        for  (int i = 0; i < wordInputArray.Length; i++)
+        {
+            if ((wordInputArray[i] <'A' && wordInputArray[i] > 'Z') || (wordInputArray[i] < 'a' && wordInputArray[i] > 'z'))
+            {
+                return false;
+            }
+        }
+        return true;
+        
     }
-
-    public bool IsAlpha(string myString)
-
-    
-
-
 
 
   }

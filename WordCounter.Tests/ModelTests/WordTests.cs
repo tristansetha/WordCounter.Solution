@@ -10,10 +10,10 @@ namespace WordCounter.Tests
   {
     // Test methods will go here.
     [TestMethod]
-    public void ItemConstructor_CreatesInstanceOfWord_Word()
+    public void IsAlpha_ChecksForAlphabeticCharacters_True()
     {
       Word newWord = new Word();
-      Assert.AreEqual(true(Word), newWord.GetType());
+      Assert.AreEqual(true, newWord.IsAlpha("Apple"));
     }
 
   }
