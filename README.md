@@ -6,16 +6,15 @@ By Tristan Setha
 
 ## Description
 
-
+A word counter that takes an input of a Word and a Sentence and outputs how many words are in the sentence!
 
 ## Setup/Installation Requirements
 
 Cloning
-Open terminal and $cd into preferred destination of clone
-Run the command $ git clone https://github.com/tristansetha/xxxxxx
-then  open index.html file using web browser
-
-or visit https://tristansetha.github.io/xxxxxxx/
+Open terminal and $ cd into preferred destination of clone
+Run the command $ git clone https://github.com/tristansetha/word-counter
+$ cd into WordCounter
+$ mcs Program.cs Models/Word.cs; mono Program.cs
 
 ## Specs
 
