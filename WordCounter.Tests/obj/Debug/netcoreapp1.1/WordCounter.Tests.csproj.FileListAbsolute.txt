@@ -1,0 +1,14 @@
+/Users/tristansetha/Desktop/projects/csharp/WordCounter.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/WordCounter.Tests.deps.json
+/Users/tristansetha/Desktop/projects/csharp/WordCounter.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/WordCounter.Tests.runtimeconfig.json
+/Users/tristansetha/Desktop/projects/csharp/WordCounter.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/WordCounter.Tests.runtimeconfig.dev.json
+/Users/tristansetha/Desktop/projects/csharp/WordCounter.Solution/WordCounter.Tests/obj/Debug/netcoreapp1.1/WordCounter.Tests.csproj.CoreCompileInputs.cache
+/Users/tristansetha/Desktop/projects/csharp/WordCounter.Solution/WordCounter.Tests/obj/Debug/netcoreapp1.1/WordCounter.Tests.AssemblyInfo.cs
+/Users/tristansetha/Desktop/projects/csharp/WordCounter.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+/Users/tristansetha/Desktop/projects/csharp/WordCounter.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+/Users/tristansetha/Desktop/projects/csharp/WordCounter.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+/Users/tristansetha/Desktop/projects/csharp/WordCounter.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/WordCounter.Tests.dll
+/Users/tristansetha/Desktop/projects/csharp/WordCounter.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/WordCounter.Tests.pdb
+/Users/tristansetha/Desktop/projects/csharp/WordCounter.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/WordCounter.dll
+/Users/tristansetha/Desktop/projects/csharp/WordCounter.Solution/WordCounter.Tests/bin/Debug/netcoreapp1.1/WordCounter.pdb
+/Users/tristansetha/Desktop/projects/csharp/WordCounter.Solution/WordCounter.Tests/obj/Debug/netcoreapp1.1/WordCounter.Tests.dll
+/Users/tristansetha/Desktop/projects/csharp/WordCounter.Solution/WordCounter.Tests/obj/Debug/netcoreapp1.1/WordCounter.Tests.pdb
