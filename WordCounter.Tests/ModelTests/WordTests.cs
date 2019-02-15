@@ -13,7 +13,7 @@ namespace WordCounter.Tests
     public void ItemConstructor_CreatesInstanceOfWord_Word()
     {
       Word newWord = new Word();
-      Assert.AreEqual(typeof(Word), newWord.GetType());
+      Assert.AreEqual(true(Word), newWord.GetType());
     }
 
   }
