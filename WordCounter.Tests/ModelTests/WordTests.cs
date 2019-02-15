@@ -23,5 +23,12 @@ namespace WordCounter.Tests
       Assert.AreEqual(true, newWord.IsSentenceAlpha("Apples are good"));
     }
 
+    [TestMethod]
+    public void CountWords_CountsWordsInSentence_1()
+    {
+      Word newWord = new Word();
+      Assert.AreEqual(1, newWord.Count("Apples", "Apples are good"));
+    }
+
   }
 }
