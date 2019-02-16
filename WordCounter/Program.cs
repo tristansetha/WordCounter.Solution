@@ -14,13 +14,10 @@ namespace WordCounter{
 
             Word newCount = new Word(myWord, mySentence);
 
-            if  (newCount.IsWordAlpha(myWord) && newCount.IsSentenceAlpha(mySentence))
+            if (newCount.IsWordAlpha(myWord) && newCount.IsSentenceAlpha(mySentence))
             {
-                int myCount = newCount.Count(mySentence, myWord);
+                int myCount = newCount.Count(myWord, mySentence);
                 Console.WriteLine("Word count: " + myCount);
-            }
-            else{
-                Console.WriteLine("Please enter a valid input: ");
             }
         }
     }

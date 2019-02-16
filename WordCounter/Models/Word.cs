@@ -23,7 +23,7 @@ namespace WordCounter.Models
         
         for  (int i = 0; i < wordInputArray.Length; i++)
         {
-            if (wordInputArray[i] > 'A' && wordInputArray[i] < 'Z') 
+            if (wordInputArray[i] < 'A' && wordInputArray[i] > 'Z') 
             {
                 return false;
             } 
@@ -40,7 +40,7 @@ namespace WordCounter.Models
 
         for  (int i = 0; i < sentenceInputArray.Length; i++)
         {
-            if (sentenceInputArray[i] > 'A' & sentenceInputArray[i] < 'Z') 
+            if (sentenceInputArray[i] < 'A' && sentenceInputArray[i] > 'Z') 
             {
                 return false;
             }
@@ -49,7 +49,7 @@ namespace WordCounter.Models
        
     }
 
-    public int Count(string SentenceInput, string WordInput)
+    public int Count(string WordInput, string SentenceInput)
     {
         string[] sentenceWordSplit = SentenceInput.Split(' ');
         int wordCount = 0;
