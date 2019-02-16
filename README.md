@@ -33,4 +33,6 @@ Mono, C#, Git, Visual Studio code
 
 ask me anything!!! tristansetha@gmail.com
 
+MIT
+
 Copyright (c) 2019 Tristan Setha
