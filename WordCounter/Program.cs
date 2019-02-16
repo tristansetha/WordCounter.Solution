@@ -18,7 +18,11 @@ namespace WordCounter{
             {
                 int myCount = newCount.Count(myWord, mySentence);
                 Console.WriteLine("Word count: " + myCount);
+            } else
+            {
+                Console.WriteLine("Enter a valid input");
             }
+            
         }
     }
 }
