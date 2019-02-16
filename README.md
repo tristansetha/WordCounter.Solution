@@ -1,6 +1,6 @@
 # Track suggester
 
-An introduction
+Count the words in any sentence
 
 By Tristan Setha
 
