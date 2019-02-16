@@ -24,7 +24,7 @@ $ mcs Program.cs Models/Word.cs; mono Program.cs
 |  User enters in alphabetic string (sentence) | The apple tree has an apple| n/a |
 |  User enters in number or symbol in 'any' input | 4ppl& | please enter a qualifing sentence andor word |
 |  if any words match the inputted word in sentence add one to counter (ex. initital-sentence: The apple tree has an apple) | apple | add 2 to counter |
-|  if no words match sentence (ex. initital-sentence: The apple tree has an apple) |  zebra | (add 0 to counter) no words match |
+|  if no words match sentence (ex. sentence: The apple tree has an apple) |  zebra | (add 0 to counter) no words match |
 
 
 ## Technologies Used
