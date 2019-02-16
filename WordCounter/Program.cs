@@ -7,9 +7,9 @@ namespace WordCounter{
     {
         public static void Main()
         {
-            Console.WriteLine("Enter a word: ");
+            Console.WriteLine("Enter a word (No numbers or symbols): ");
             string myWord = Console.ReadLine();
-            Console.WriteLine("Type a sentence: ");
+            Console.WriteLine("Type a sentence (No numbers or symbols): ");
             string mySentence = Console.ReadLine();
 
             Word newCount = new Word(myWord, mySentence);
@@ -18,6 +18,9 @@ namespace WordCounter{
             {
                 int myCount = newCount.Count(mySentence, myWord);
                 Console.WriteLine("Word count: " + myCount);
+            }
+            else{
+                Console.WriteLine("Please enter a valid input: ");
             }
         }
     }
