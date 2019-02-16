@@ -2,7 +2,7 @@
 
 Count the words in any sentence
 
-By Tristan Setha
+By Tristan Setha 02/15/18
 
 ## Description
 
