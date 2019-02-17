@@ -12,22 +12,30 @@ namespace WordCounter.Tests
     [TestMethod]
     public void IsWordAlpha_ChecksForAlphabeticCharactersInWordInput_True()
     {
-      Word newWord = new Word();
-      Assert.AreEqual(true, newWord.IsWordAlpha("Apples"));
+      string wordInput = "apple";
+      string sentenceInput = "The apple tree has an apple";
+      Word newWord = new Word(wordInput, sentenceInput);
+      Assert.AreEqual(true, newWord.IsWordAlpha("apple"));
     }
 
     [TestMethod]
     public void IsSentenceAlpha_ChecksForAlphabeticCharactersInSentenceInput_True()
     {
-      Word newWord = new Word();
-      Assert.AreEqual(true, newWord.IsSentenceAlpha("Apples are good"));
+      string wordInput = "apple";
+      string sentenceInput = "The apple tree has an apple";
+      Word newWord = new Word(wordInput, sentenceInput);
+
+      Assert.AreEqual(true, newWord.IsSentenceAlpha("The apple tree has an apple"));
     }
 
     [TestMethod]
-    public void CountWords_CountsWordsInSentence_1()
+    public void Count_CountsWordsInSentence_2()
     {
-      Word newWord = new Word();
-      Assert.AreEqual(1, newWord.Count("Apples", "Apples are good"));
+      string wordInput = "apple";
+      string sentenceInput = "The apple tree has an apple";
+      Word newWord = new Word(wordInput, sentenceInput);
+
+      Assert.AreEqual(2, newWord.Count(wordInput, sentenceInput));
     }
 
   }

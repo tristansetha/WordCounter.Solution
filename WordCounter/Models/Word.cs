@@ -5,7 +5,7 @@ using WordCounter;
 namespace WordCounter.Models
 {
   public class Word
-  { // properties, methods, etc. will go here.
+  { 
     public string WordInput;
     public string SentenceInput;
     public int WordCount;
