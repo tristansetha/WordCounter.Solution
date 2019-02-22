@@ -6,7 +6,11 @@ namespace WordCounter.Controllers
 {
     public class WordController : Controller
     {
-
+        [HttpGet("/word")]
+        public ActionResult Index()
+        {
+            return View();
+        }
     }
 
 }
