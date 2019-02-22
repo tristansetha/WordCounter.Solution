@@ -9,7 +9,46 @@ namespace WordCounter.Models
     private string WordInput;
     private string SentenceInput;
     private int WordCount;
+    private static List<Word> Instances = new List<Word>{}; // test this
 
+    public Word (string wordInput, string sentenceInput)
+    {
+      WordInput = wordInput;
+      SentenceInput = sentenceInput;
+      Instances.Add(this); // test this
+    }
+
+    public int GetWordCount()
+    {
+      return WordCount;
+    }
+
+    public string GetWordInput()
+    {
+      return WordInput;
+    }
+
+    public string GetSentenceInput()
+    {
+      return SentenceInput;
+    }
+
+    public int Count(string WordInput, string SentenceInput)
+    {
+        string[] sentenceWordSplit = SentenceInput.Split(' ');
+        int wordCount = 0;
+        for (int i = 0; i < sentenceWordSplit.Length; i++)
+        {
+            if (sentenceWordSplit[i] == WordInput)
+            {
+                wordCount += 1;
+            }
+        }
+        return wordCount;
+    }
+
+  }
+}
 
     // public bool IsWordAlpha(string WordInput)
     // {
@@ -43,20 +82,3 @@ namespace WordCounter.Models
     //     return true;
        
     // }
-
-    // public int Count(string WordInput, string SentenceInput)
-    // {
-    //     string[] sentenceWordSplit = SentenceInput.Split(' ');
-    //     int wordCount = 0;
-    //     for (int i = 0; i < sentenceWordSplit.Length; i++)
-    //     {
-    //         if (sentenceWordSplit[i] == WordInput)
-    //         {
-    //             wordCount += 1;
-    //         }
-    //     }
-    //     return wordCount;
-    // }
-
-  }
-}

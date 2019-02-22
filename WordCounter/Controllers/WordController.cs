@@ -11,6 +11,20 @@ namespace WordCounter.Controllers
         {
             return View();
         }
-    }
 
+        [HttpGet("/words/new")] // test this
+        public ActionResult New()
+        {
+            return View();
+        }
+
+        [HttpPost("/words")]
+        public ActionResult Create(string word, string sentence) //test this
+        {
+            Word myWord = new Word(word, sentence);
+            return RedirectToAction("Index");
+        }
+
+        
+    }
 }
