@@ -9,22 +9,23 @@ namespace WordCounter.Controllers
         [HttpGet("/word")]
         public ActionResult Index()
         {
-            return View();
+            List<Word> allWords = Word.GetAll();
+            return View(allWords);
         }
 
-        [HttpGet("/words/new")] // test this
+        [HttpGet("/word/new")] // test this
         public ActionResult New()
         {
             return View();
         }
 
-        [HttpPost("/words")]
-        public ActionResult Create(string word, string sentence) //test this
-        {
-            Word myWord = new Word(word, sentence);
+        [HttpPost("/word")]
+        public ActionResult Create(string wordInput, string sentenceInput) //test this
+        {         
+            Word myWord = new Word(wordInput, sentenceInput);
+            int wordCount = myWord.CountWords(wordInput, sentenceInput);
+            myWord.SetWordCount(wordCount); 
             return RedirectToAction("Index");
         }
-
-        
     }
 }

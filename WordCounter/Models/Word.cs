@@ -15,6 +15,7 @@ namespace WordCounter.Models
     {
       WordInput = wordInput;
       SentenceInput = sentenceInput;
+      WordCount = 0;
       Instances.Add(this); // test this
     }
 
@@ -33,52 +34,35 @@ namespace WordCounter.Models
       return SentenceInput;
     }
 
-    public int Count(string WordInput, string SentenceInput)
+    public static List<Word> GetAll()
+    {
+      return Instances;
+    }
+
+    public void SetWordCount(int wordCount)
+    {
+      WordCount = wordCount;
+    }
+
+    public static void ClearAll()
+    {
+      Instances.Clear();
+    }
+
+    public int CountWords(string WordInput, string SentenceInput)
     {
         string[] sentenceWordSplit = SentenceInput.Split(' ');
-        int wordCount = 0;
+        int countWords = 0;
         for (int i = 0; i < sentenceWordSplit.Length; i++)
         {
             if (sentenceWordSplit[i] == WordInput)
             {
-                wordCount += 1;
+                countWords += 1;
             }
         }
-        return wordCount;
+        return countWords;
     }
 
   }
 }
 
-    // public bool IsWordAlpha(string WordInput)
-    // {
-    //     string myWordUpper = WordInput.ToUpper();
-    //     char[] wordInputArray = myWordUpper.ToCharArray();
-        
-    //     for  (int i = 0; i < wordInputArray.Length; i++)
-    //     {
-    //         if (wordInputArray[i] < 'A' || wordInputArray[i] > 'Z') 
-    //         {
-    //             return false;
-    //         } 
-    //     }
-    //     return true;
-        
-    // }
-
-    // public bool IsSentenceAlpha(string SentenceInput)
-    // {
-    //     string mySentenceUpper = SentenceInput.ToUpper();
-    //     string sentenceInputReplace = mySentenceUpper.Replace(" ", "");
-    //     char[] sentenceInputArray = sentenceInputReplace.ToCharArray();
-
-    //     for  (int i = 0; i < sentenceInputArray.Length; i++)
-    //     {
-    //         if (sentenceInputArray[i] < 'A' || sentenceInputArray[i] > 'Z') 
-    //         {
-    //             return false;
-    //         }
-    //     }
-    //     return true;
-       
-    // }
