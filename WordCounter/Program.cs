@@ -1,28 +1,20 @@
-using System;
-using WordCounter.Models;
-using System.Collections.Generic;
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
 
-namespace WordCounter{
-    public class Program
+namespace WordCounter
+{
+  public class Program
+  {
+    public static void Main(string[] args)
     {
-        public static void Main()
-        {
-            Console.WriteLine("Enter a word (No numbers or symbols): ");
-            string myWord = Console.ReadLine();
-            Console.WriteLine("Type a sentence (No numbers or symbols): ");
-            string mySentence = Console.ReadLine();
+      var host = new WebHostBuilder()
+        .UseKestrel()
+        .UseContentRoot(Directory.GetCurrentDirectory())
+        .UseIISIntegration()
+        .UseStartup<Startup>()
+        .Build();
 
-            Word newCount = new Word(myWord, mySentence);
-
-            if (newCount.IsWordAlpha(myWord) && newCount.IsSentenceAlpha(mySentence))
-            {
-                int myCount = newCount.Count(myWord, mySentence);
-                Console.WriteLine("Word count: " + myCount);
-            } else
-            {
-                Console.WriteLine("Enter a valid input");
-            }
-            
-        }
+      host.Run();
     }
+  }
 }
