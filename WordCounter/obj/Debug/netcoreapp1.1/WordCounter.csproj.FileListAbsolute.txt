@@ -5,3 +5,5 @@
 /Users/tristansetha/Desktop/projects/csharp/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp1.1/WordCounter.AssemblyInfo.cs
 /Users/tristansetha/Desktop/projects/csharp/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp1.1/WordCounter.dll
 /Users/tristansetha/Desktop/projects/csharp/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp1.1/WordCounter.pdb
+/Users/tristansetha/Desktop/projects/csharp/WordCounter.Solution/WordCounter/bin/Debug/netcoreapp1.1/WordCounter.runtimeconfig.json
+/Users/tristansetha/Desktop/projects/csharp/WordCounter.Solution/WordCounter/bin/Debug/netcoreapp1.1/WordCounter.runtimeconfig.dev.json

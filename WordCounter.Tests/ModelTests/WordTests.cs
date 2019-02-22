@@ -6,8 +6,9 @@ using System;
 namespace WordCounter.Tests
 {
   [TestClass]
-  public class WordTest
+  public class WordTest 
   {
+
     // // Test methods will go here.
     // [TestMethod]
     // public void IsWordAlpha_ChecksForAlphabeticCharactersInWordInput_True()
@@ -38,5 +39,5 @@ namespace WordCounter.Tests
     //   Assert.AreEqual(2, newWord.Count(wordInput, sentenceInput));
     // }
 
-  }
+  };
 }

@@ -4,17 +4,12 @@ using WordCounter;
 
 namespace WordCounter.Models
 {
-  public class WordCount
+  public class Word
   { 
     private string WordInput;
     private string SentenceInput;
     private int WordCount;
 
-    public WordCount(string wordInput, string sentenceInput) // Constructor
-    {
-        WordInput = wordInput;
-        SentenceInput = sentenceInput;
-    }
 
     // public bool IsWordAlpha(string WordInput)
     // {
