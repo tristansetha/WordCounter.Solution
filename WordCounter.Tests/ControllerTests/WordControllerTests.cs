@@ -28,27 +28,17 @@ namespace WordCounter.Tests
         [TestMethod]
         public void Create_ReturnsCorrectActionType_RedirectToActionResult()
         {
-            //Arrange
             WordController controller = new WordController();
-
-            //Act
             IActionResult view = controller.Create("word", "word in a sentence");
-
-            //Assert
             Assert.IsInstanceOfType(view, typeof(RedirectToActionResult));
         }
 
         [TestMethod]
         public void Create_RedirectsToCorrectAction_Index()
         {
-            //Arrange
             WordController controller = new WordController();
             RedirectToActionResult actionResult = controller.Create("word", "word in a sentence") as RedirectToActionResult;
-
-            //Act
             string result = actionResult.ActionName;
-
-            //Assert
             Assert.AreEqual(result, "Index");
         }
     }

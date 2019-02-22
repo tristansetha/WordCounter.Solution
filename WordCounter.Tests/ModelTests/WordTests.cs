@@ -28,5 +28,34 @@ namespace WordCounter.Tests
       Assert.AreEqual(0, wordCount);
     }
 
+    [TestMethod]
+    public void GetWordInput_ReturnWordInput_String()
+    {
+      Word newWord = new Word("Word", "Sentence");
+      Assert.AreEqual("Word", newWord.GetWordInput());
+    }
+
+    [TestMethod]
+    public void GetSentenceInput_ReturnSentenceInput_String()
+    {
+      Word newWord = new Word("Word", "Sentence");
+      Assert.AreEqual("Sentence", newWord.GetSentenceInput());
+    }
+    
+    [TestMethod]
+    public void CountWords_ReturnNumberOfWords_Int()
+    {
+      Word newWord = new Word("Word", "Word Sentence");
+      Assert.AreEqual(1, newWord.CountWords("Word", "Word Sentence"));
+    }
+
+    [TestMethod]
+    public void SetWordCount_ReturnWordCount_Int()
+    {
+      Word newWord = new Word("Word", "Word Sentence");
+      int wordCount = newWord.CountWords("Word", "Word Sentence");
+      newWord.SetWordCount(wordCount);
+      Assert.AreEqual(1, newWord.GetWordCount());
+    }
   };
 }

@@ -5,8 +5,8 @@
 <ol>
 @foreach (Word word in Model)
 {
-    <li>@word.GetWordInput()</li>
-    <li>@word.GetSentenceInput()</li>
-    <li>@word.GetWordCount()</li>
+    <li>"Word:" @word.GetWordInput()</li>
+    <li>"Sentence:" @word.GetSentenceInput()</li>
+    <li>"Count:" @word.GetWordCount()</li>
 }
 </ol>
