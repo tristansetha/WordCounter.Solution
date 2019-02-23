@@ -2,11 +2,13 @@
 
 <h1>Word Counter</h1>
 
-<ol>
+<ol style="list-style-type:none;">
 @foreach (Word word in Model)
 {
-    <li>"Word:" @word.GetWordInput()</li>
-    <li>"Sentence:" @word.GetSentenceInput()</li>
-    <li>"Count:" @word.GetWordCount()</li>
+    <br/><li><strong>Word:</strong>  @word.GetWordInput()</li>
+    <li><strong>Sentence:</strong> @word.GetSentenceInput()</li>
+    <li><strong>Count:</strong> @word.GetWordCount()</li><br/>
 }
 </ol>
+
+<a href="/word/new">Count more words in sentences</a>
