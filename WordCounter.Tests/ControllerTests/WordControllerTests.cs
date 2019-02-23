@@ -26,6 +26,15 @@ namespace WordCounter.Tests
         }
 
         [TestMethod]
+        public void Index_HasCorrectModelType_WordList()
+        {
+            WordController controller = new WordController();
+            ViewResult indexView = controller.Index() as ViewResult;
+            var result = indexView.ViewData.Model;
+            Assert.IsInstanceOfType(result, typeof(List<Word>));
+        }
+
+        [TestMethod]
         public void Create_ReturnsCorrectActionType_RedirectToActionResult()
         {
             WordController controller = new WordController();
