@@ -26,9 +26,9 @@ $ mcs Program.cs Models/Word.cs; mono Program.cs
 | ------------------------------------|:-------------:| :-------------:|
 |  user enters home and clicks the link to form | click link  | form |
 |  user enters in a word input with no sentence   | apple | invalid input |
-|  user enters in a sentence with not word | the apple | invalid inout |
-|  user enters in not inputs | | invalid inpute |
-|  User enters in just an alphabetic string (word),User enters in alphabetic string (sentence)  | apple, The apple tree has an apple |  Word: apple, Sentence: he apple tree has an apple, Count: 2  |
+|  user enters in a sentence with no word | the apple | invalid input |
+|  user enters in no inputs | | invalid input |
+|  User enters in (word),User enters in (sentence)  | apple, The apple tree has an apple |  Word: apple, Sentence: he apple tree has an apple, Count: 2  |
 |  User enters in number or symbol in 'any' input | 4ppl&, the apple tree has an apple | invalid input |
 |  if any words match the inputted word in sentence add one to counter (eg. sentence: The apple tree has an apple ) | apple | add 2 to counter; Count: 2 |
 |  if no words match sentence (eg. sentence: The apple tree has an apple) |  zebra | (add 0 to counter) no words match; Count: 0 |
