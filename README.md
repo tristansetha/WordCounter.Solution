@@ -11,24 +11,24 @@ A word counter that takes an input of a Word and a Sentence and outputs how many
 ## Setup/Installation Requirements
 
 Cloning
-Download .NET Core 1.1.4 SDK and .NET Core Runtime 1.1.2 and install them. Download Mono and install it.
-Open terminal and $ cd into preferred destination of clone
-Run the command $ git clone https://github.com/tristansetha/WordCounter.Solution
-$ cd into WordCounter.Solution
-To edit: open in preffered text editor
+<br/>Download .NET Core 1.1.4 SDK and .NET Core Runtime 1.1.2 and install them. Download Mono and install it.
+<br/>Open terminal and $ cd into preferred destination of clone
+<br/>Run the command $ git clone https://github.com/tristansetha/WordCounter.Solution
+<br/>$ cd into WordCounter.Solution
+<br/>To edit: open in preffered text editor
 
-In command prompt or terminal
-Navigate into WordCounter.Solution directoy: $ cd WordCounter.Solution
-Navigate into WordCounter directory: $ cd WordCounter
-while in the WordCounter directory use the commands:
-$ dotnet restore
-$ dotnet run
-Open the path from "Now listening on: http://localhost:5000 in your favorite web browser
+<br/>In command prompt or terminal
+<br/>Navigate into WordCounter.Solution directoy: $ cd WordCounter.Solution
+<br/>Navigate into WordCounter directory: $ cd WordCounter
+<br/>while in the WordCounter directory use the commands:
+<br/>$ dotnet restore
+<br/>$ dotnet run
+<br/>Open the path from "Now listening on: http://localhost:5000 in your favorite web browser
 
-To run tests:
-in terminal or command prompt navigate to WordCounter.Solution/WordCounter.Tests. 
-    $ cd WordCounter.Tests
-use the command $ dotnet test
+<br/>To run tests:
+<br/>in terminal or command prompt navigate to WordCounter.Solution/WordCounter.Tests. 
+    <br/>$ cd WordCounter.Tests
+<br/>use the command $ dotnet test
 
 ## Specs
 
