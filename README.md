@@ -11,14 +11,24 @@ A word counter that takes an input of a Word and a Sentence and outputs how many
 ## Setup/Installation Requirements
 
 Cloning
+Download .NET Core 1.1.4 SDK and .NET Core Runtime 1.1.2 and install them. Download Mono and install it.
 Open terminal and $ cd into preferred destination of clone
 Run the command $ git clone https://github.com/tristansetha/WordCounter.Solution
-$ cd into WordCounter
+$ cd into WordCounter.Solution
+To edit: open in preffered text editor
+
+In command prompt or terminal
+Navigate into WordCounter.Solution directoy: $ cd WordCounter.Solution
+Navigate into WordCounter directory: $ cd WordCounter
+while in the WordCounter directory use the commands:
 $ dotnet restore
 $ dotnet run
 Open the path from "Now listening on: http://localhost:5000 in your favorite web browser
-then 
-$ mcs Program.cs Models/Word.cs; mono Program.cs
+
+To run tests:
+in terminal or command prompt navigate to WordCounter.Solution/WordCounter.Tests. 
+    $ cd WordCounter.Tests
+use the command $ dotnet test
 
 ## Specs
 
@@ -36,7 +46,7 @@ $ mcs Program.cs Models/Word.cs; mono Program.cs
 
 ## Technologies Used
 
-Mono, C#, .NetCore 1.1, HTML, Git, Visual Studio code
+C#, .NetCore 1.1, HTML, Git, Visual Studio code, Mono
 
 ask me anything!!! tristansetha@gmail.com
 
