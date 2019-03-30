@@ -1,4 +1,4 @@
-# Track suggester
+# Word Counter
 
 Count the words in any sentence
 
